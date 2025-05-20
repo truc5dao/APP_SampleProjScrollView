@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">K22411CSampleProject</string>
-    <string name="title_login_user_name">Useername:</string>
+    <string name="title_login_user_name">Username:</string>
     <string name="title_login_user_name_hint">Enter your username</string>
     <string name="title_login_password">Password:</string>
     <string name="title_login_save_login_infor">Save login infor?</string>
@@ -11,4 +11,20 @@
     <string name="confirm_exit_no">NO</string>
     <string name="title_employee">Employee</string>
     <string name="title_customer">Customer</string>
+    <string name="title_healthcare">Health Care</string>
+    <string name="title_employee_healthcare">Employee Healthcare</string>
+    <string name="title_height">Height</string>
+    <string name="title_weight">Weight\n</string>
+    <string name="title_calculate">Calculate\n</string>
+    <string name="title_clear">Clear</string>
+    <string name="title_close">Close</string>
+    <string name="title_slim">Slim</string>
+    <string name="title_normal">Normal</string>
+    <string name="title_fat">Fat</string>
+
+    <string name="title_salary">Salary\n</string>
+    <string name="title_categories">Categories\n</string>
+    <string name="title_Product">Product</string>
+    <string name="title_product">Product</string>
+    <string name="title_advanced_product">Advanced Product\n</string>
 </resources>

@@ -1,6 +1,8 @@
 package com.cuatrucdao.k22411csampleproject;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,11 @@ public class EmployeeManagementActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+
+    public void open_employee_healthcare_activity(View view) {
+        Intent intent = new Intent(EmployeeManagementActivity.this, EmployeeHealthcareActivity.class);
+        startActivity(intent);
     }
 }

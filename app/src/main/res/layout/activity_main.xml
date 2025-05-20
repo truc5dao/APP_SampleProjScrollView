@@ -1,80 +1,165 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="#F2DFDF"
+
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
 
+        <!-- Row 1 -->
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/imgEmployee"
-                    android:layout_width="match_parent"
-                    android:layout_height="105dp"
-                    android:layout_weight="1"
-                    android:onClick="openEmployeeManagementActivity"
+                    android:layout_width="150dp"
+                    android:layout_height="174dp"
+                    android:layout_marginBottom="8dp"
+                    android:maxWidth="100dp"
                     app:srcCompat="@mipmap/ic_employee" />
-
 
                 <TextView
                     android:id="@+id/txtEmployee"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/title_employee"
-                    android:textAlignment="center"
-                    android:textSize="24sp" />
+                    android:textColor="#F44336"
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/imgCustomer"
-                    android:layout_width="match_parent"
-                    android:layout_height="105dp"
-                    android:layout_weight="1"
-                    android:maxWidth="10dp"
+                    android:layout_width="150dp"
+                    android:layout_height="174dp"
+                    android:layout_marginBottom="8dp"
+                    android:maxWidth="100dp"
                     app:srcCompat="@mipmap/ic_customer" />
 
                 <TextView
                     android:id="@+id/txtCustomer"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/title_customer"
-                    android:textAlignment="center"
-                    android:textSize="24sp" />
+                    android:textColor="#F44336"
+                    android:textSize="12sp" />
             </LinearLayout>
         </TableRow>
 
-
+        <!-- Row 2 -->
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="wrap_content">
 
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgProduct"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="8dp"
+                    app:srcCompat="@mipmap/ic_product"
+                    tools:srcCompat="@mipmap/ic_product" />
+
+                <TextView
+                    android:id="@+id/txtProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_product"
+                    android:textColor="#F44336"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgAdvancedProduct"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="8dp"
+                    app:srcCompat="@mipmap/ic_advanced_product"
+                    tools:srcCompat="@mipmap/ic_advanced_product" />
+
+                <TextView
+                    android:id="@+id/txtAdvancedProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_advanced_product"
+                    android:textColor="#F44336"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </TableRow>
+
+        <!-- Row 3 -->
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="261dp">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgCategory"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="8dp"
+                    app:srcCompat="@mipmap/ic_category"
+                    tools:srcCompat="@mipmap/ic_category" />
+
+                <TextView
+                    android:id="@+id/txtCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_categories"
+                    android:textColor="#F44336"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" />
+
+        </TableRow>
+
+
     </TableLayout>
 </LinearLayout>

@@ -94,19 +94,19 @@ public class LoginActivity extends AppCompatActivity {
         dialog.show();
     }
 
-    private long lastBackPressedTime = 0;
-    private static final long BACK_PRESS_THRESHOLD = 500;
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        long currentTime = System.currentTimeMillis();
-        if (currentTime - lastBackPressedTime <= BACK_PRESS_THRESHOLD) {
-            do_exit(null);
-        } else {
-            lastBackPressedTime = currentTime;
-            Toast.makeText(this, "Click once more to exit", Toast.LENGTH_SHORT).show();
-        }
-    }
+//    private long lastBackPressedTime = 0;
+//    private static final long BACK_PRESS_THRESHOLD = 500;
+//    @Override
+//    public void onBackPressed() {
+//        super.onBackPressed();
+//        long currentTime = System.currentTimeMillis();
+//        if (currentTime - lastBackPressedTime <= BACK_PRESS_THRESHOLD) {
+//            do_exit(null);
+//        } else {
+//            lastBackPressedTime = currentTime;
+//            Toast.makeText(this, "Click once more to exit", Toast.LENGTH_SHORT).show();
+//        }
+//    }
 
 
 }

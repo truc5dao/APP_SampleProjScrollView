@@ -1,180 +1,83 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".EmployeeManagementActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/main"
+
+<TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:stretchColumns="*">
 
-        <TableLayout
+        <TableRow
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:padding="8dp">
 
-            <!-- Row 1 -->
-            <TableRow
-                android:layout_width="match_parent"
+            <!-- First Cell -->
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:paddingBottom="12dp">
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="8dp">
 
-                <LinearLayout
+                <ImageView
+                    android:id="@+id/imgEmployeeHealthcare"
+                    android:layout_width="150dp"
+                    android:layout_height="99dp"
+                    android:layout_marginBottom="8dp"
+                    android:onClick="open_employee_healthcare_activity"
+                    app:srcCompat="@mipmap/ic_employee_healthcare" />
+
+                <TextView
+                    android:id="@+id/txtEmployeeHealthcare"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical">
+                    android:background="#8400B1"
+                    android:gravity="center"
+                    android:minWidth="150dp"
+                    android:onClick="open_employee_healthcare_activity"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:text="@string/title_healthcare"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </LinearLayout>
 
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="260dp"
-                        android:layout_height="260dp"
-                        app:srcCompat="@mipmap/ic_login_button" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="John Doe"
-                        android:textSize="18sp"
-                        android:layout_marginStart="16dp" />
-                </LinearLayout>
-            </TableRow>
-
-            <!-- Repeat for each row -->
-            <TableRow
-                android:layout_width="match_parent"
+            <!-- Second Cell -->
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:paddingBottom="12dp">
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="8dp">
 
-                <LinearLayout
+                <ImageView
+                    android:id="@+id/imgEmployeeSalary"
+                    android:layout_width="150dp"
+                    android:layout_height="99dp"
+                    android:layout_marginBottom="8dp"
+                    app:srcCompat="@mipmap/ic_salary" />
+
+                <TextView
+                    android:id="@+id/txtEmployeeSalary"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical">
+                    android:layout_height="23dp"
+                    android:background="#8400B1"
+                    android:gravity="center"
+                    android:minWidth="150dp"
+                    android:onClick="open_employee_healthcare_activity"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:text="@string/title_salary"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </TableRow>
 
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="260dp"
-                        android:layout_height="260dp"
-                        app:srcCompat="@mipmap/ic_login_button" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Alice Smith"
-                        android:textSize="18sp"
-                        android:layout_marginStart="16dp" />
-                </LinearLayout>
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingBottom="12dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical">
-
-                    <ImageView
-                        android:id="@+id/imageView4"
-                        android:layout_width="260dp"
-                        android:layout_height="260dp"
-                        app:srcCompat="@mipmap/ic_login_button" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Robert Lee"
-                        android:textSize="18sp"
-                        android:layout_marginStart="16dp" />
-                </LinearLayout>
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingBottom="12dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical">
-
-                    <ImageView
-                        android:id="@+id/imageView5"
-                        android:layout_width="260dp"
-                        android:layout_height="260dp"
-                        app:srcCompat="@mipmap/ic_login_button" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Maria Chen"
-                        android:textSize="18sp"
-                        android:layout_marginStart="16dp" />
-                </LinearLayout>
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingBottom="12dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical">
-
-                    <ImageView
-                        android:id="@+id/imageView6"
-                        android:layout_width="260dp"
-                        android:layout_height="260dp"
-                        app:srcCompat="@mipmap/ic_login_button" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="David Kim"
-                        android:textSize="18sp"
-                        android:layout_marginStart="16dp" />
-                </LinearLayout>
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingBottom="12dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical">
-
-                    <ImageView
-                        android:id="@+id/imageView7"
-                        android:layout_width="260dp"
-                        android:layout_height="260dp"
-                        app:srcCompat="@mipmap/ic_login_button" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Emma Watson"
-                        android:textSize="18sp"
-                        android:layout_marginStart="16dp" />
-                </LinearLayout>
-            </TableRow>
-
-        </TableLayout>
-    </LinearLayout>
-</ScrollView>
+        <!-- Empty rows can be removed or adjusted as needed -->
+    </TableLayout>
+</LinearLayout>
