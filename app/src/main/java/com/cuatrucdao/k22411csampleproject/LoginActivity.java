@@ -1,6 +1,7 @@
 package com.cuatrucdao.k22411csampleproject;
 
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.view.View;
 
@@ -108,5 +109,45 @@ public class LoginActivity extends AppCompatActivity {
 //        }
 //    }
 
+    public void saveLoginInformation()
+    {
+        SharedPreferences preferences = getSharedPreferences("LOGIN_INFORMATION", MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        String usr = edtUserName.getText().toString();
+        String pwd = edtPassword.getText().toString();
+        boolean isSave = chkSaveLogin.isChecked();
+        editor.putString("USERNAME", usr);
+        editor.putString("PASSWORD", pwd);
+        editor.putBoolean("SAVED", isSave);
+        editor.commit();
+    }
 
+    @Override
+    protected void onPause()
+    {
+        super.onPause();
+        saveLoginInformation();
+    }
+
+    ///  khi doc ra, khogn can doi tuong editor
+    public void restoreLoginInformation()
+    {
+        SharedPreferences preferences = getSharedPreferences("LOGIN_INFORMATION", MODE_PRIVATE);
+        String usr = preferences.getString("USERNAME", "");
+        String pwd = preferences.getString("PASSWORD", "");
+        boolean isSave = preferences.getBoolean("", true);
+
+        if (isSave)
+        {
+            edtUserName.setText(usr);
+            edtPassword.setText(pwd);
+            chkSaveLogin.setChecked(isSave);
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        restoreLoginInformation();
+    }
 }

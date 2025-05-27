@@ -24,6 +24,12 @@ public class ProductAdapter extends ArrayAdapter<Product> {
         this.resource = resource;
     }
 
+    @Override
+    public Product getItem(int position) {
+        return super.getItem(position);
+    }
+
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {

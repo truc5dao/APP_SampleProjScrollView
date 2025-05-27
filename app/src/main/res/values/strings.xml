@@ -41,4 +41,11 @@
     <string name="title_save">Save</string>
     <string name="title_remove">Remove</string>
     <string name="title_button_new">New</string>
+    <string name="title_new_product">New Product</string>
+    <string name="title_product_detail" />
+    <string name="title_product_details">Product Detail</string>
+    <string name="title_product_id">ProductID\n</string>
+    <string name="title_product_name">Product Name\n</string>
+    <string name="title_product_quantity">Product Quantity</string>
+    <string name="title_product_price">Product Price</string>
 </resources>
