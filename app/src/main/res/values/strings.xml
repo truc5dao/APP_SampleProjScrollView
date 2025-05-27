@@ -27,4 +27,18 @@
     <string name="title_Product">Product</string>
     <string name="title_product">Product</string>
     <string name="title_advanced_product">Advanced Product\n</string>
+    <string name="title_new_customer">New Customer\n</string>
+    <string name="title_broadcast_advertising">Broadcast Advertising</string>
+    <string name="title_help">Help</string>
+    <string name="title_customer_detail">Customer Details</string>
+    <string name="title_customer_id">Customer ID</string>
+    <string name="title_customer_name">Customer Name\n</string>
+    <string name="title_customer_email">Customer Email</string>
+    <string name="title_customer_phone">Customer Phone\n</string>
+    <string name="title_customer_username">Username</string>
+    <string name="title_customer_password">Password</string>
+    <string name="title_new" />
+    <string name="title_save">Save</string>
+    <string name="title_remove">Remove</string>
+    <string name="title_button_new">New</string>
 </resources>

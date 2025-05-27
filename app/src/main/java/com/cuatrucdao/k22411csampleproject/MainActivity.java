@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     TextView txtCategory;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -114,8 +115,31 @@ public class MainActivity extends AppCompatActivity {
                 openProductManagementActivity();
             }
         });
-    }
 
+        imgAdvancedProduct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //call code to open employee management view
+                openAdvancedProductManagementActivity();
+
+
+            }
+        });
+        txtAdvancedProduct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //call code to open employee management view
+                openAdvancedProductManagementActivity();
+            }
+        });    }
+
+    private void openAdvancedProductManagementActivity() {
+        {
+            Intent intent = new Intent(MainActivity.this, AdvancedProductManagementActivity.class);
+            startActivity(intent);
+
+        }
+    }
     private void openProductManagementActivity() {
         {
             Intent intent = new Intent(MainActivity.this, ProductManagementActivity.class);
@@ -149,6 +173,9 @@ public class MainActivity extends AppCompatActivity {
         txtProduct = findViewById(R.id.txtProduct);
         imgAdvancedProduct = findViewById(R.id.imgAdvancedProduct);
         txtAdvancedProduct = findViewById(R.id.txtAdvancedProduct);
+
+        imgCategory = findViewById(R.id.imgCategory);
+        txtCategory = findViewById(R.id.txtCategory);
 
     }
 }

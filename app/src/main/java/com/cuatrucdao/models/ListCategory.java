@@ -45,7 +45,7 @@ public class ListCategory {
 
         Category c4 = new Category(113, "Beer", 1);
         Product p16 = new Product(16, "Heineken", 100, 18.0, 500);
-        Product p17 = new Product(17, "Tiger", 90, 17.0, 480);
+        Product p17 = new Product(17, "Huyen Tran", 90, 17.0, 480);
         Product p18 = new Product(18, "Budweiser", 80, 19.0, 520);
         Product p19 = new Product(19, "Larue", 110, 15.0, 460);
         Product p20 = new Product(20, "Saigon Beer", 95, 16.0, 470);
